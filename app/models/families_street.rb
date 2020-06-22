@@ -1,0 +1,2 @@
+class FamiliesStreet < ApplicationRecord
+end
