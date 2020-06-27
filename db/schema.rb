@@ -19,8 +19,12 @@ ActiveRecord::Schema.define(version: 2020_06_22_080251) do
   end
 
   create_table "families_streets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "families_id"
+    t.bigint "streets_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["families_id"], name: "index_families_streets_on_families_id"
+    t.index ["streets_id"], name: "index_families_streets_on_streets_id"
   end
 
   create_table "houses", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
