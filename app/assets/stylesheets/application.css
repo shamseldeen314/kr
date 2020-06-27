@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+ 
+ body{
+    height: auto;
+    background: url(/img/vc.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+
+.total-price{
+
+color: white;
+
+
+}
+    
